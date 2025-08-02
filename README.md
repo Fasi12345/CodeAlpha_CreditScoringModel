@@ -1,7 +1,7 @@
 Task 01: Credit Scoring Model using Classification Algorithms
 ---
 This project is part of my Data Science Internship at CodeAlpha, where I built a Credit Scoring Model to assess the creditworthiness of individuals using classification techniques such as Logistic Regression, Decision Tree, and Random Forest.
----
+
 Objective
 To predict whether an individual is likely to default on credit using historical financial behavior and account-related features.
 
