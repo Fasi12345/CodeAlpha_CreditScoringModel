@@ -1,72 +1,80 @@
-CodeAlpha_Credit_Scoring_Model
+Task 01: Credit Scoring Model using Classification Algorithms
 ---
-Project Overview
+This project is part of my Data Science Internship at CodeAlpha, where I built a Credit Scoring Model to assess the creditworthiness of individuals using classification techniques such as Logistic Regression, Decision Tree, and Random Forest.
 ---
-This project aims to predict an individual's creditworthiness using past financial history. Classification models such as Logistic Regression, Decision Tree, and Random Forest were employed to identify potential credit risks.
+Objective
+To predict whether an individual is likely to default on credit using historical financial behavior and account-related features.
 
-Dataset Description
-The dataset includes various financial attributes of users, such as:
+Dataset
+Name: Credit Scoring Dataset
 
-Number of inquiries
+Features:
 
-Payment history
+Financial history (loan counts, balances, payment history)
 
-Account utilization
+Credit inquiries & utilization percentages
 
-Delinquency indicators
+Account activity timeline
 
-Total loans & balances
+Target: TARGET — 1 for Defaulter, 0 for Non-Defaulter
 
-All features are numerical, eliminating the need for categorical encoding.
+Technologies Used
+Python
 
-Machine Learning Models Used
-Logistic Regression
+Pandas
 
-Decision Tree Classifier
+Scikit-learn
 
-Random Forest Classifier
+Seaborn / Matplotlib
 
-Each model was evaluated using:
+Jupyter Notebook
 
-Accuracy
+Steps Performed
+✅ 1. Data Exploration
+Checked dataset structure, types, null values, and descriptive statistics
 
-Precision
+Visualized key patterns using bar plots, heatmaps, and distribution plots
 
-Recall
+✅ 2. Data Preprocessing
+Verified all columns were numerical
 
-F1-Score
+Checked for imbalance in the target class
 
-ROC-AUC Score
+Standardized features using StandardScaler
 
-Exploratory Data Analysis (EDA)
-Distribution of financial attributes
+Performed Train-Test split (80:20)
 
-Correlation heatmap
+✅ 3. Model Building
+Trained Logistic Regression, Decision Tree, and Random Forest classifiers
 
-Credit risk pattern analysis
+Compared performance using classification metrics
 
-Outlier and imbalance inspection
+✅ 4. Evaluation
+Accuracy, Precision, Recall, F1-Score, ROC-AUC
 
-Final Insights
-Loan Delinquency and High Credit Utilization were key indicators of credit risk.
+Plotted Confusion Matrix and ROC Curves for each model
 
-Random Forest Classifier gave the best performance with a balanced accuracy and AUC.
+✅ Results
+Random Forest Classifier performed the best overall
 
-Model performance was visualized using ROC-AUC curves for comparison.
+ROC-AUC Score: 0.92
 
-Project Structure
+Accuracy: 90%+ on test set
 
-CodeAlpha_Credit_Scoring_Model
-Task_01_Credit_Scoring_Model.ipynb
-visualizations/
-README.md
+Key Indicators of default risk:
 
-How to Run
-Clone this repository
+High loan utilization
 
-Open the .ipynb file using Jupyter Notebook or Google Colab
+Frequent inquiries
 
-Run all cells to reproduce results
+Past late payments
+
+✅ Insights
+Individuals with multiple recent inquiries and high utilization are at higher risk
+
+Past payment issues strongly affect creditworthiness predictions
+
+Random Forest was most effective at balancing recall and precision
 
 Conclusion
 This project provides a strong foundation for automated credit scoring systems, helping financial institutions identify and reduce risk in lending.
